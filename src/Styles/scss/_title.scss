@@ -1,0 +1,10 @@
+@use 'colors';
+
+h1 {
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    background-color: colors.$wood;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}

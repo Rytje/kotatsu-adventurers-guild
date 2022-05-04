@@ -12,7 +12,9 @@
     "@types/react-dom": "^17.0.11",
     "bootstrap": "^5.1.3",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.2.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.2"
@@ -22,7 +24,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "style": "sass src/Styles/scss/style.scss src/Styles/css/style.css --watch"
+    "style": "sass src/Styles/scss/style.scss src/Styles/css/style.css",
+    "style-watch": "sass src/Styles/scss/style.scss src/Styles/css/style.css --watch"
   },
   "eslintConfig": {
     "extends": [

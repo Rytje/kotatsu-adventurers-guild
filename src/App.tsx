@@ -1,11 +1,50 @@
+import { useState, useEffect } from 'react';
+import { Col, Container, Row, Tabs, Tab } from 'react-bootstrap';
+import CommisionBoard from './Components/Content/CommissionBoard';
+import PlayerList from './Components/Content/PlayerList';
+import Tips from './Components/Content/Tips';
+import NavigationBar from './Components/NavigationBar';
+
 function App() {
+
+  const [content, setContent] = useState("PlayerList");
+
+  useEffect(() => {
+    // first
+    console.log("Use effect yo");
+
+
+    return () => {
+      // second
+    }
+  }, [])
+
+
   return (
-    <div>
+    <Container fluid="sm" className='' >
       <header>
-        <h1>Test</h1>
-        <button className="btn btn-primary" onClick={()=>{console.log("test")}}>test</button>
+        <Row className='my-3' >
+          <Col>
+            <h1>Tomodachi Impact</h1>
+          </Col>
+        </Row>
+        {/* <NavigationBar content={content} setContent={setContent} /> */}
       </header>
-    </div>
+
+      <main>
+        <Tabs variant='pills' defaultActiveKey="playerlist" className='rounded my-3' >
+          <Tab eventKey="playerlist" title="Player List" >
+            <PlayerList />
+          </Tab>
+          <Tab eventKey="commissionboard" title="Commission Board" >
+            <CommisionBoard />
+          </Tab>
+          <Tab eventKey="cooptips" title="Co-op tips" >
+            <Tips />
+          </Tab>
+        </Tabs>
+      </main>
+    </Container>
   );
 }
 

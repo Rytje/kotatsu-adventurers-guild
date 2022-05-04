@@ -1,0 +1,42 @@
+@use 'colors';
+
+.player-card{
+    border: 3px white solid;
+    background-color: beige;
+    border-radius: 200px;
+    font-family: Maple, cursive, serif;
+
+    img{
+        // max-width: 100px;
+        // max-height: 100px;
+    }
+
+    p {
+        max-height: 80px;
+        overflow-y: auto;
+        scrollbar-color: colors.$dark colors.$secondary;
+        scrollbar-width: thin;
+        margin-bottom: 0px;
+        
+        &::-webkit-scrollbar{
+            background-color: colors.$secondary;
+            width: 10px;
+            border-radius: 25px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: colors.$dark; 
+            border-radius: 10px;
+          }
+    }
+
+    button {
+        // background-color: #98a41c;
+        // border-color: #98a41c;
+
+        &:hover {
+            // background-color: #656c43;
+            // border-color: #656c43;
+        }
+    }
+}

@@ -1,16 +1,74 @@
+@use "title";
+@use "tips";
+@use "player-card";
+@use "colors";
+
 // Custom.scss
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
+$primary: colors.$primary;
+$secondary: colors.$secondary;
+$success: colors.$success;
+$info: colors.$info;
+$warning: colors.$warning;
+$danger: colors.$danger;
+$dark: colors.$dark;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 
-h1 {
-    color: red;
+@font-face {
+    font-family: "HachiMaruPop";
+    src: url("../../Assets/HachiMaruPop-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Maple";
+    src: url("../../Assets/Maplestory-Light.ttf") format("truetype");
 }
 
 body {
-    background-color: gray;
+    font-family: HachiMaruPop, cursive, serif;
+    background-color: bisque;
+    background-image: url("../../Assets/UI_ItemIcon_201.png");
+    background-size: 5%;
+    scrollbar-color: colors.$dark colors.$secondary;
+    scrollbar-width: thin;
+    margin-bottom: 0px;
+
+    &::-webkit-scrollbar {
+        background-color: colors.$secondary;
+        width: 15px;
+        border-radius: 25px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: colors.$dark;
+        border-radius: 10px;
+    }
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    // background: linear-gradient(to right, colors.$wood 65%, transparent);
+    background: linear-gradient(to right, transparent 0%, colors.$wood 20%, colors.$wood 80%, transparent 100%);
+    // background: radial-gradient(circle at center, colors.$wood 0%, colors.$wood 70%, transparent 90%);
+    border-radius: 5px;
+    padding: 0.25rem 0rem 0.25rem 1rem;
+}
+
+main {
+    ul {
+        background-color: beige;
+
+        li {
+            button {
+                // font-weight: bold;
+            }
+        }
+    }
 }
