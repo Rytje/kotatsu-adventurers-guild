@@ -17,7 +17,7 @@ export default function PlayerCard({ avatarURL }: Props) {
             <span className='d-block'>UID: 703704060</span>
             </Col>
             <Col md={4} className='d-none d-md-block align-self-center'><p>Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text Random text </p></Col>
-            <Col className='d-flex' xs={2} md={1}><Button className='align-self-center'><BsSearch /></Button></Col>
+            <Col className='d-flex' xs={2} md={1}><Button variant='outline-primary' className='align-self-center'><BsSearch /></Button></Col>
         </Row>
     )
 }

@@ -1,5 +1,198 @@
 {
-    "aether": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/character_icon/UI_AvatarIcon_PlayerBoy.png",
-    "lumine": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/character_icon/UI_AvatarIcon_PlayerGirl.png",
-    "lisa": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/092c535573fccfb0f7e1859a71e6701d.png"
+    "aether": {
+        "name": "Aether",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/character_icon/UI_AvatarIcon_PlayerBoy.png"
+    },
+    "lumine": {
+        "name": "Lumine",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/character_icon/UI_AvatarIcon_PlayerGirl.png"
+    },
+    "lisa": {
+        "name": "Lisa",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/092c535573fccfb0f7e1859a71e6701d.png"
+    },
+    "barbara": {
+        "name": "Barbara",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/5577bf812990ff6d6ca39aa05b72c5a4.png"
+    },
+    "kaeya": {
+        "name": "Kaeya",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/3f586dc25aaae9e3cde19ea8a5d8c568.png"
+    },
+    "razor": {
+        "name": "Razor",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/aac66ce6cc9526134d2776256029e84e.png"
+    },
+    "amber": {
+        "name": "Amber",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/c2c4643450a69691cffda076e0bc8af9.png"
+    },
+    "xiangling": {
+        "name": "Xiangling",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/40a370d69c6e1ce41ee7e0cf156d6b58.png"
+    },
+    "beidou": {
+        "name": "Beidou",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/0cd899abd9ec46bb3cf3371214b585ed.png"
+    },
+    "xingqui": {
+        "name": "Xinqui",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/fe790fff060e979ef06cd63054278b3f.png"
+    },
+    "ningguang": {
+        "name": "Ningguang",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/44ce6456ae3bb49e5ced8882b6c0b708.png"
+    },
+    "fischl": {
+        "name": "Fischl",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/7194ceeeb137750c6654ec1ba67699fb.png"
+    },
+    "bennett": {
+        "name": "Bennett",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/68e0340022a97f48fdbd6950d42adf5f.png"
+    },
+    "noelle": {
+        "name": "Noelle",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/173ac86b0f866e7637e9a66299058299.png"
+    },
+    "chongyun": {
+        "name": "Chongyun",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/12db45294f19a79298a00b1172b72eae.png"
+    },
+    "diona": {
+        "name": "Diona",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/1aa906c0c7f48343b6139aaa01f7550a.png"
+    },
+    "sucrose": {
+        "name": "Sucrose",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/7de5d806f19074950ea888498fd92b32.png"
+    },
+    "xinyan": {
+        "name": "Xinyan",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/0cc0d503856575fa626a95338cbc57c9.png"
+    },
+    "rosaria": {
+        "name": "Rosaria",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/3ae53731073182a666689c6ac466c2c8.png"
+    },
+    "yanfei": {
+        "name": "Yanfei",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/fc502692b9f1552531908032e1708c8c.png"
+    },
+    "thoma": {
+        "name": "Thoma",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/edfb5bbca68c4b9c4ab37ffe2c8c8462.png"
+    },
+    "sayu": {
+        "name": "Sayu",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/bcb6b9a30b76e27b2bb145499ef49005.png"
+    },
+    "gorou": {
+        "name": "Gorou",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/3d098dbfb9a176d2d26609c7916d5002.png"
+    },
+    "kujousara": {
+        "name": "Kujou Sara",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/9e80d7d7a20cb73e854bbeeee2a767b2.png"
+    },
+    "yunjin": {
+        "name": "Yun Jin",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/814e88a83a29a119b120570b2b4fce1a.png"
+    },
+    "aloy": {
+        "name": "Aloy",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/9645c99d4e9b47ce6cf470e502510ed6.png"
+    },
+    "kamisatoayaka": {
+        "name": "Kamisato Ayaka",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/b0afd77b3b3e87203800377277579cc9.png"
+    },
+    "jean": {
+        "name": "Jean",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/0dfa84865a3cdd7c3d29345e5681c93e.png"
+    },
+    "diluc": {
+        "name": "Diluc",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/55a1520a1e000667f2829d1561817413.png"
+    },
+    "venti": {
+        "name": "Venti",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/14b2db0f15000e9f44724ea084df7e5f.png"
+    },
+    "xiao": {
+        "name": "Xiao",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/93dfe306a846fbc79d40774e66ca690d.png"
+    },
+    "klee": {
+        "name": "Klee",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/3aa0cfed0130c81795749000fd5dbca1.png"
+    },
+    "zhongli": {
+        "name": "Zhongli",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/e0ef37cac6a3f7bee9b8deb1ce68671d.png"
+    },
+    "tartaglia": {
+        "name": "Tartaglia",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/fd96c848e631932c1c63705d0c000389.png"
+    },
+    "qiqi": {
+        "name": "Qiqi",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/b22fa146cf51472195e7e57a6f3c0cbc.png"
+    },
+    "ganyu": {
+        "name": "Ganyu",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/6cf2b840aea7f04be424688c07f0621f.png"
+    },
+    "albedo": {
+        "name": "Albedo",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/00e825527174888734df1d25b09330a3.png"
+    },
+    "mona": {
+        "name": "Mona",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/9a8c420feda33f36680839c8b8dc1d83.png"
+    },
+    "keqing": {
+        "name": "Keqing",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/7d30e3e5a6d992367f44244511512cfc.png"
+    },
+    "hutao": {
+        "name": "Hu Tao",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/8a22d45d54474531cd31fba042504a4e.png"
+    },
+    "kaedeharakazuha": {
+        "name": "Kaedehara Kazuha",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/b2a6e87853dcab477daad9417616dfa2.png"
+    },
+    "yoimiya": {
+        "name": "Yoimiya",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/51816d88c16f416031b4ce9d4ed9f0ca.png"
+    },
+    "eula": {
+        "name": "Eula",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/046d8e356455db1ba78ddc046d371ff4.png"
+    },
+    "raidenshogun": {
+        "name": "Raiden Shogun",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/9a39679245c38060afa26a6b9e054cf8.png"
+    },
+    "sangonomiyakokomi": {
+        "name": "Sangonomiya Kokomi",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/04936637f8cfde1d71d2d906fa805083.png"
+    },
+    "aratakiitto": {
+        "name": "Arataki Itto",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/d5f93b4bf9974cf07eb8d11cc2a2cd42.png"
+    },
+    "yaemiko": {
+        "name": "Yae Miko",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/5aa1c3c229ab59cbbde9785aff38347b.png"
+    },
+    "shenhe": {
+        "name": "Shenhe",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/6bba4703cf66b8e25eb423725b570d8d.png"
+    },
+    "kamisatoayato": {
+        "name": "Kamisato Ayato",
+        "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/ff08010d84a134f0d4aef6863009c6c0.png"
+    }
 }

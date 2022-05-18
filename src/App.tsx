@@ -3,22 +3,8 @@ import { Col, Container, Row, Tabs, Tab } from 'react-bootstrap';
 import CommisionBoard from './Components/Content/CommissionBoard';
 import PlayerList from './Components/Content/PlayerList';
 import Tips from './Components/Content/Tips';
-import NavigationBar from './Components/NavigationBar';
 
 function App() {
-
-  const [content, setContent] = useState("PlayerList");
-
-  useEffect(() => {
-    // first
-    console.log("Use effect yo");
-
-
-    return () => {
-      // second
-    }
-  }, [])
-
 
   return (
     <Container fluid="sm" className='' >
@@ -28,7 +14,6 @@ function App() {
             <h1>Tomodachi Impact</h1>
           </Col>
         </Row>
-        {/* <NavigationBar content={content} setContent={setContent} /> */}
       </header>
 
       <main>
