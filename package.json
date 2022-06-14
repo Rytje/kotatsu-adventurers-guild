@@ -18,6 +18,7 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
+    "sass": "^1.52.3",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.2",
     "yup": "^0.32.11"
@@ -27,8 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "style": "sass /src/Styles/scss/style.scss src/Styles/css/style.css",
-    "style-watch": "sass /src/Styles/scss/style.scss src/Styles/css/style.css --watch"
+    "style": "sass src/Styles/scss/style.scss src/Styles/css/style.css",
+    "style-watch": "sass src/Styles/scss/style.scss src/Styles/css/style.css --watch",
+    "my-test": "sass src/Styles/scss/style.scss src/Styles/css/style.css && npm start"
   },
   "eslintConfig": {
     "extends": [
