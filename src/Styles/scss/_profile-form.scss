@@ -1,3 +1,28 @@
-.form-floating {
-    margin-bottom: 0.5rem;
+@use 'colors';
+
+.add-profile-modal {
+
+    .modal-header {
+        color: white;
+        background-color: colors.$wood;
+    }
+
+    .add-profile-form {
+        background-color: beige;
+
+        .form-floating {
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        select {
+            background-color: beige;
+        }
+    }
+
+
+    #pinCodeText {
+        font-family: Maple, cursive, serif;
+    }
+
 }

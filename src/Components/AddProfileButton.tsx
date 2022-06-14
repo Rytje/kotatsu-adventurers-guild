@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
 import AddProfileModal from './AddProfileModal';
 
-type Props = {};
+type Props = {
+    setAlert: React.Dispatch<React.SetStateAction<{type: string, content: string}>>;
+    setShowAlert: (value: boolean) => void;
+    GetAllProfiles: () => void;
+};
 
-export default function AddProfileButton({ }: Props) {
+export default function AddProfileButton({ setAlert, setShowAlert, GetAllProfiles }: Props) {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -20,7 +24,7 @@ export default function AddProfileButton({ }: Props) {
                 </Col>
             </Row>
 
-            <AddProfileModal showModal={showModal} toggleModal={toggleModal} />
+            <AddProfileModal showModal={showModal} toggleModal={toggleModal} setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
         </>
     )
 }

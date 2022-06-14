@@ -1,0 +1,25 @@
+@use 'colors';
+
+.view-profile-modal {
+
+    .modal-header {
+        color: white;
+        background-color: colors.$wood;
+    }
+
+    .profile-view {
+        background-color: beige;
+
+        .avatar {
+            width: 100%;
+            min-width: 182px;
+            max-width: 256px;
+        }
+
+        .small-avatar {
+            width: 100%;
+            min-width: 182px;
+            max-width: 231px;
+        }
+    }
+}
