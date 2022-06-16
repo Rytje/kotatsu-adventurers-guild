@@ -1,3 +1,10 @@
+## Visit live version
+
+[Here](https://tomodachiimpact.netlify.app/)
+
+# What is Tomodachi Impact?
+This is my passion project to practice with React and TypeScript. It's made for fellow students and friends connected to my online Japanese classes that play the game Genshin Impact. Here players can add their profile, place requests for help in the game and read tips on how to play together.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
