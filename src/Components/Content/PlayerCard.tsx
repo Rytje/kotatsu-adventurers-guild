@@ -4,10 +4,28 @@ import charactersJson from '../../character-avatar-urls.json';
 import ViewProfileButton from '../ViewProfileButton';
 
 type Props = {
-    avatar: string, name: string, ign: string, lvl: number, uid: number, server: string, msg: string, favChar: string, wantedChar: string, pinCode: string, updOn: number, docId: string, husbando: string, waifu: string, kiddo: string, artifact: string
+    avatar: string;
+    name: string;
+    ign: string;
+    lvl: number;
+    uid: number;
+    server: string;
+    msg: string;
+    favChar: string;
+    wantedChar: string;
+    pinCode: string;
+    updOn: number;
+    docId: string;
+    husbando: string;
+    waifu: string;
+    kiddo: string;
+    artifact: string;
+    setAlert: React.Dispatch<React.SetStateAction<{ type: string, content: string }>>;
+    setShowAlert: (value: boolean) => void;
+    GetAllProfiles: () => void;
 };
 
-export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, favChar, wantedChar, pinCode, updOn, docId, husbando, waifu, kiddo, artifact }: Props) {
+export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, favChar, wantedChar, pinCode, updOn, docId, husbando, waifu, kiddo, artifact, setAlert, setShowAlert, GetAllProfiles }: Props) {
 
     let charactersArray = Object.entries(charactersJson);
     charactersArray.sort();
@@ -20,8 +38,8 @@ export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, f
 
     let characterIndex;
     characterIndex = charactersArray.findIndex(e => e[0] === characterTag);
-    
-    
+
+
 
     return (
         <Row className='player-card mb-1'>
@@ -34,7 +52,7 @@ export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, f
             </Col>
             <Col md={4} className='d-none d-md-block align-self-center'><p>{msg}</p></Col>
             {/* <Col className='d-flex' xs={2} md={1}><Button variant='outline-primary' className='align-self-center'><BsSearch /></Button></Col> */}
-            <ViewProfileButton avatar={avatar} name={name} ign={ign} lvl={lvl} uid={uid} server={server} msg={msg} favChar={favChar} wantedChar={wantedChar} pinCode={pinCode} updOn={updOn} docId={docId} husbando={husbando} waifu={waifu} kiddo={kiddo} artifact={artifact} />
+            <ViewProfileButton avatar={avatar} name={name} ign={ign} lvl={lvl} uid={uid} server={server} msg={msg} favChar={favChar} wantedChar={wantedChar} pinCode={pinCode} updOn={updOn} docId={docId} husbando={husbando} waifu={waifu} kiddo={kiddo} artifact={artifact} setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
         </Row>
     )
 }

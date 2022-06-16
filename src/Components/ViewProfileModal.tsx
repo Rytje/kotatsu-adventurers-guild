@@ -3,16 +3,23 @@ import { Timestamp } from 'firebase/firestore';
 import { Modal, Button, Row, Col, Image, Container } from 'react-bootstrap';
 import charactersJson from '../character-avatar-urls.json';
 import artifactsJson from '../artifacts-data.json';
+import ConfirmModal from './ConfirmModal';
 
 type Props = {
     showModal: boolean;
     toggleModal: () => void;
-    avatar: string, name: string, ign: string, lvl: number, uid: number, server: string, msg: string, favChar: string, wantedChar: string, pinCode: string, updOn: number, docId: string, husbando: string, waifu: string, kiddo: string, artifact: string
+    avatar: string, name: string, ign: string, lvl: number, uid: number, server: string, msg: string, favChar: string, wantedChar: string, pinCode: string, updOn: number, docId: string, husbando: string, waifu: string, kiddo: string, artifact: string, setAlert: React.Dispatch<React.SetStateAction<{type: string, content: string}>>, setShowAlert: (value: boolean) => void, GetAllProfiles: ()=> void
 }
 
-export default function ViewProfileModal({ showModal, toggleModal, avatar, name, ign, lvl, uid, server, msg, favChar, wantedChar, pinCode, updOn, docId, husbando, waifu, kiddo, artifact }: Props) {
+export default function ViewProfileModal({ showModal, toggleModal, avatar, name, ign, lvl, uid, server, msg, favChar, wantedChar, pinCode, updOn, docId, husbando, waifu, kiddo, artifact, setAlert, setShowAlert, GetAllProfiles }: Props) {
 
     const [updating, setUpdating] = useState(false);
+
+    const [showConfirmModal, setShowConfirmModal] = useState(false);
+
+    function toggleConfirmModal(){
+        setShowConfirmModal(!showConfirmModal);
+    }
 
     let charactersArray = Object.entries(charactersJson);
     charactersArray.sort();
@@ -127,10 +134,11 @@ export default function ViewProfileModal({ showModal, toggleModal, avatar, name,
                 </Container>
             </Modal.Body>
             <Modal.Footer className='d-flex justify-content-between'>
-                <Button variant="danger" onClick={toggleModal}>Delete</Button>
+                <Button variant="danger" onClick={toggleConfirmModal}>Delete</Button>
+                <ConfirmModal showConfirmModal={showConfirmModal} toggleConfirmModal={toggleConfirmModal} toggleViewModal={toggleModal} pinCode={pinCode} docId={docId} setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
                 <div>
                     <Button variant="secondary" onClick={toggleModal} className='me-3'>Close</Button>
-                    <Button variant="primary" onClick={toggleUpdating}>Update</Button>
+                    <Button variant="primary" onClick={toggleUpdating} disabled>Update</Button>
                 </div>
             </Modal.Footer>
         </Modal>
