@@ -9,8 +9,9 @@ export default function Tips({ }: Props) {
             <Col className='tip-window' >
                 <h2>General tips</h2>
                 <ListGroup>
-                    <ListGroupItem>If you are facing strong enemies, consider picking a character than can heal.</ListGroupItem>
+                    <ListGroupItem>If you are facing strong enemies, consider picking a character that can heal/shield.</ListGroupItem>
                     <ListGroupItem>If there is no healer or shield in the party, consider equipping a <a href="https://genshin-impact.fandom.com/wiki/NRE_(Menu_30)" target="_blank" rel="noopener noreferrer">NRE</a>.</ListGroupItem>
+                    <ListGroupItem>You can sell/destroy your useless artifacts for Mora.</ListGroupItem>
                 </ListGroup>
             </Col>
             <Col className='tip-window' >

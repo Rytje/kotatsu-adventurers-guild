@@ -31,9 +31,9 @@ export default function ConfirmModal({ showConfirmModal, toggleConfirmModal, tog
     }
 
     return (
-        <Modal show={showConfirmModal} onHide={toggleConfirmModal}>
+        <Modal show={showConfirmModal} onHide={toggleConfirmModal} className='add-profile-modal'>
             <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+                <Modal.Title>Delete profile</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <FloatingLabel label="Pin code" controlId='pinCode'>
@@ -42,7 +42,7 @@ export default function ConfirmModal({ showConfirmModal, toggleConfirmModal, tog
                 {attempts > 0 && <span className='text-danger'>The pincode you entered is wrong! Attempt #{attempts}</span>}
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={toggleConfirmModal}>
+                <Button variant="outline-secondary text-black" onClick={toggleConfirmModal}>
                     Close
                 </Button>
                 <Button variant="danger" onClick={AttemptDelete}>

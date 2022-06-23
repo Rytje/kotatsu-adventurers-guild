@@ -315,7 +315,7 @@ export default function ViewProfileModal({ showModal, toggleModal, avatar, name,
                                             {errors.pinCode}
                                         </Form.Control.Feedback>
                                         <Form.Text id='pinCodeText' >
-                                            <p>Leave this empty if you want to keep your old pin code.</p>
+                                            <p>Leave this empty if you want to keep your old pin code. Fill it in if you want to change your pin code.</p>
                                         </Form.Text>
                                         <h2>Optional</h2>
                                         <FloatingLabel label='Profile message' controlId='msg'>
@@ -383,10 +383,13 @@ export default function ViewProfileModal({ showModal, toggleModal, avatar, name,
                                         </Form.Select>
                                         <Form.Control.Feedback />
                                     </FloatingLabel>
-                                    <h2>Pin code</h2>
+                                    <h2>Pin code confimation</h2>
                                     <FloatingLabel label="Pin code" controlId='pinCheck'>
                                         <Form.Control type='password' placeholder='1234' onChange={HandleChange} value={pinCheck}></Form.Control>
                                     </FloatingLabel>
+                                    <Form.Text id='pinCheckText' >
+                                            <p>Enter your (current) pin code here to confirm you are the owner of this profile.</p>
+                                        </Form.Text>
                                     {attempts > 0 && <span className='text-danger'>The pincode you entered is wrong! Attempt #{attempts}</span>}
                                 </Modal.Body>
                                 <Modal.Footer>
@@ -414,8 +417,8 @@ export default function ViewProfileModal({ showModal, toggleModal, avatar, name,
                     </div>
                     :
                     <div>
-                        <Button variant="secondary" onClick={toggleModal} className='me-3'>Close</Button>
-                        <Button variant="primary" onClick={toggleUpdating} >Update</Button>
+                        <Button variant="outline-secondary" onClick={toggleModal} className='text-black me-3'>Close</Button>
+                        <Button variant="primary" onClick={toggleUpdating} className='text-white' >Update</Button>
                     </div>
                 }
             </Modal.Footer>
