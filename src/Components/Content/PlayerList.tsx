@@ -55,7 +55,7 @@ export default function PlayerList({ }: Props) {
 
       <AddProfileButton setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
       {profileState.map((element, index) => {
-        return <PlayerCard key={index} avatar={element.avatar} name={element.name} ign={element.ign} lvl={element.lvl} uid={element.uid} server={element.server} msg={element.msg} favChar={element.favChar} wantedChar={element.wantedChar} pinCode={element.pinCode} updOn={element.updatedOn} docId={docIdState[index]} husbando={element.husbando} waifu={element.waifu} kiddo={element.kiddo} artifact={element.artifact} setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
+        return <PlayerCard key={index} avatar={element.avatar} name={element.name} ign={element.ign} lvl={element.lvl} uid={element.uid} server={element.server} msg={element.msg} favChar={element.favChar} wantedChar={element.wantedChar} pinCode={element.pinCode} updOn={element.updatedOn} docId={docIdState[index]} husbando={element.husbando} waifu={element.waifu} chibi={element.chibi} artifact={element.artifact} setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
       })}
     </>
   )

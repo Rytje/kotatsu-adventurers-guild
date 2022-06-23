@@ -18,6 +18,7 @@ export default function ConfirmModal({ showConfirmModal, toggleConfirmModal, tog
         });
         setShowAlert(true);
         GetAllProfiles();
+        toggleConfirmModal();
         toggleViewModal();
     }
 

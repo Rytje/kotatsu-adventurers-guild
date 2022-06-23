@@ -18,14 +18,14 @@ type Props = {
     docId: string;
     husbando: string;
     waifu: string;
-    kiddo: string;
+    chibi: string;
     artifact: string;
     setAlert: React.Dispatch<React.SetStateAction<{ type: string, content: string }>>;
     setShowAlert: (value: boolean) => void;
     GetAllProfiles: () => void;
 };
 
-export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, favChar, wantedChar, pinCode, updOn, docId, husbando, waifu, kiddo, artifact, setAlert, setShowAlert, GetAllProfiles }: Props) {
+export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, favChar, wantedChar, pinCode, updOn, docId, husbando, waifu, chibi, artifact, setAlert, setShowAlert, GetAllProfiles }: Props) {
 
     let charactersArray = Object.entries(charactersJson);
     charactersArray.sort();
@@ -33,7 +33,7 @@ export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, f
     // charactersSelect.unshift(["", { "name": "", "url": "", "sex": "", "size": "" }]);
 
     let characterTag = avatar;
-    characterTag = characterTag.replace(" ", "");
+    characterTag = characterTag.replaceAll(" ", "");
     characterTag = characterTag.toLowerCase();
 
     let characterIndex;
@@ -52,7 +52,7 @@ export default function PlayerCard({ avatar, name, ign, lvl, uid, server, msg, f
             </Col>
             <Col md={4} className='d-none d-md-block align-self-center'><p>{msg}</p></Col>
             {/* <Col className='d-flex' xs={2} md={1}><Button variant='outline-primary' className='align-self-center'><BsSearch /></Button></Col> */}
-            <ViewProfileButton avatar={avatar} name={name} ign={ign} lvl={lvl} uid={uid} server={server} msg={msg} favChar={favChar} wantedChar={wantedChar} pinCode={pinCode} updOn={updOn} docId={docId} husbando={husbando} waifu={waifu} kiddo={kiddo} artifact={artifact} setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
+            <ViewProfileButton avatar={avatar} name={name} ign={ign} lvl={lvl} uid={uid} server={server} msg={msg} favChar={favChar} wantedChar={wantedChar} pinCode={pinCode} updOn={updOn} docId={docId} husbando={husbando} waifu={waifu} chibi={chibi} artifact={artifact} setAlert={setAlert} setShowAlert={setShowAlert} GetAllProfiles={GetAllProfiles} />
         </Row>
     )
 }

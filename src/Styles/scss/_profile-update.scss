@@ -1,0 +1,23 @@
+@use 'colors';
+
+.update-profile {
+    background-color: beige;
+
+    .update-profile-form {
+
+        .form-floating {
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        select {
+            background-color: beige;
+        }
+    }
+
+
+    #pinCodeText {
+        font-family: Maple, cursive, serif;
+    }
+
+}

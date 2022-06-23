@@ -39,7 +39,7 @@ const addProfileSchema = Yup.object().shape({
   wantedChar: Yup.string(),
   husbando: Yup.string(),
   waifu: Yup.string(),
-  kiddo: Yup.string(),
+  chibi: Yup.string(),
   artifact: Yup.string()
 });
 
@@ -48,11 +48,12 @@ export default function AddProfileModal({ showModal, toggleModal, setAlert, setS
   let charactersArray = Object.entries(charactersJson);
   charactersArray.sort();
   let charactersSelect = Array.from(charactersArray);
-  charactersSelect.unshift(["", { "name": "", "url": "", "sex": "", "size": "" }]);
+  charactersSelect.unshift(["", { "name": "", "url": "", "sex": "", "size": "", "playable": false }]);
   let submitButton = document.getElementById("formSubmitButton");
   let husbandoSelect = charactersSelect.filter(entry => entry[1].sex === "m" || entry[1].name === "");
   let waifuSelect = charactersSelect.filter(entry => entry[1].sex === "f" && entry[1].size !== "s" || entry[1].name === "")
-  let kiddoSelect = charactersSelect.filter(entry => entry[1].size === "s" || entry[1].name === "");
+  let chibiSelect = charactersSelect.filter(entry => entry[1].size === "s" || entry[1].name === "");
+  charactersSelect = charactersSelect.filter(entry => entry[1].playable === true || entry[1].name === "");
 
   let artifactsArray = Object.entries(artifactsJson);
   artifactsArray.sort();
@@ -60,7 +61,7 @@ export default function AddProfileModal({ showModal, toggleModal, setAlert, setS
   artifactsSelect.unshift(["", { "name": "", "url": ""}]);
 
 
-  async function submitUserData(avatar: string, name: string, ign: string, lvl: any, uid: any, server: string, pinCode: string, msg: string, favChar: string, wantedChar: string, husbando: string, waifu: string, kiddo: string, artifact: string) {
+  async function submitUserData(avatar: string, name: string, ign: string, lvl: any, uid: any, server: string, pinCode: string, msg: string, favChar: string, wantedChar: string, husbando: string, waifu: string, chibi: string, artifact: string) {
 
     try {
       const docRef = await addDoc(collection(firestore, "users"), {
@@ -76,7 +77,7 @@ export default function AddProfileModal({ showModal, toggleModal, setAlert, setS
         wantedChar: wantedChar,
         husbando: husbando,
         waifu: waifu,
-        kiddo: kiddo,
+        chibi: chibi,
         artifact: artifact,
         createdOn: Timestamp.now().seconds,
         updatedOn: Timestamp.now().seconds
@@ -94,7 +95,7 @@ export default function AddProfileModal({ showModal, toggleModal, setAlert, setS
   }
 
   return (
-    <Modal show={showModal} onHide={toggleModal} className='add-profile-modal' >
+    <Modal show={showModal} onHide={toggleModal} size={"lg"} className='add-profile-modal' >
       <Modal.Header closeButton >
         <Modal.Title>Add your profile</Modal.Title>
       </Modal.Header>
@@ -111,13 +112,13 @@ export default function AddProfileModal({ showModal, toggleModal, setAlert, setS
         wantedChar: '',
         husbando: '',
         waifu: '',
-        kiddo: '',
+        chibi: '',
         artifact: ''
       }}
         validationSchema={addProfileSchema}
         onSubmit={values => {
-          submitUserData(values.avatar, values.name, values.ign, values.lvl, values.uid, values.server, values.pinCode, values.msg, values.favChar, values.wantedChar, values.husbando, values.waifu, values.kiddo, values.artifact);
-          submitButton = document.getElementById("formSubmitButton");
+          submitUserData(values.avatar, values.name, values.ign, values.lvl, values.uid, values.server, values.pinCode, values.msg, values.favChar, values.wantedChar, values.husbando, values.waifu, values.chibi, values.artifact);
+          // submitButton = document.getElementById("formSubmitButton");
           submitButton?.setAttribute("disabled", "disabled");
         }}>
 
@@ -233,10 +234,10 @@ export default function AddProfileModal({ showModal, toggleModal, setAlert, setS
                 </Form.Select>
                 <Form.Control.Feedback />
               </FloatingLabel>
-              <FloatingLabel label='Best kiddo' controlId='kiddo'>
-                <Form.Select aria-label='Kiddo character select' placeholder='Best kiddo' value={values.kiddo} onChange={handleChange} onBlur={handleBlur} isValid={touched.kiddo && !errors.kiddo} isInvalid={!!errors.kiddo && touched.kiddo} >
+              <FloatingLabel label='Best chibi' controlId='chibi'>
+                <Form.Select aria-label='chibi character select' placeholder='Best chibi' value={values.chibi} onChange={handleChange} onBlur={handleBlur} isValid={touched.chibi && !errors.chibi} isInvalid={!!errors.chibi && touched.chibi} >
                   {
-                    kiddoSelect.map((e, index) => {
+                    chibiSelect.map((e, index) => {
                       return <option key={index} value={e[1].name} >{e[1].name}</option>
                     })
                   }
