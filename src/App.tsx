@@ -24,7 +24,7 @@ function App() {
           <Tab eventKey="commissionboard" title="Commission Board" >
             <CommisionBoard />
           </Tab>
-          <Tab eventKey="cooptips" title="Co-op tips" >
+          <Tab eventKey="tips" title="Tips" >
             <Tips />
           </Tab>
         </Tabs>

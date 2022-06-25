@@ -26,6 +26,14 @@ export default function Tips({ }: Props) {
                     <ListGroupItem>Before you start and summon the monsters, make sure all players are on the field, because you can lock teammates out of the arena.</ListGroupItem>
                 </ListGroup>
             </Col>
+            <Col className='tip-window' >
+                <h2>Links</h2>
+                <ListGroup>
+                    <ListGroupItem><a href="https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481" target="_blank" rel="noopener noreferrer">Daily check in</a> (Free items and primogems)</ListGroupItem>
+                    <ListGroupItem><a href="https://act.hoyolab.com/ys/app/interactive-map/index.html" target="_blank" rel="noopener noreferrer">Teyvat Interactive Map</a></ListGroupItem>
+                    <ListGroupItem><a href="https://genshin.gg/" target="_blank" rel="noopener noreferrer">genshin.gg</a> (Character overviews, team compositions etc.)</ListGroupItem>
+                </ListGroup>
+            </Col>
         </Row>
     )
 }
