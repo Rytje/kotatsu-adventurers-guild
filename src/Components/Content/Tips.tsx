@@ -32,6 +32,7 @@ export default function Tips({ }: Props) {
                     <ListGroupItem><a href="https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481" target="_blank" rel="noopener noreferrer">Daily check in</a> (Free items and primogems)</ListGroupItem>
                     <ListGroupItem><a href="https://act.hoyolab.com/ys/app/interactive-map/index.html" target="_blank" rel="noopener noreferrer">Teyvat Interactive Map</a></ListGroupItem>
                     <ListGroupItem><a href="https://genshin.gg/" target="_blank" rel="noopener noreferrer">genshin.gg</a> (Character overviews, team compositions etc.)</ListGroupItem>
+                    <ListGroupItem><a href="https://docs.google.com/spreadsheets/d/1gNxZ2xab1J6o1TuNVWMeLOZ7TPOqrsf3SshP5DLvKzI/htmlview#" target="_blank" rel="noopener noreferrer">Community Character Builds</a> (Google Spreadsheet with Character builds)</ListGroupItem>
                 </ListGroup>
             </Col>
         </Row>
