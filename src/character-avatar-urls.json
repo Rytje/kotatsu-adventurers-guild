@@ -181,6 +181,13 @@
         "size": "m",
         "playable": true
     },
+    "shikanoinheizou": {
+        "name": "Shikanoin Heizou",
+        "url": "https://upload-static.hoyoverse.com/hk4e/e20200928calculate/item_icon_u2a3qc/dd0916cfadaa7b8db9b180bbc490bba0.png",
+        "sex": "m",
+        "size": "m",
+        "playable": true
+    },
     "aloy": {
         "name": "Aloy",
         "url": "https://uploadstatic-sea.hoyoverse.com/hk4e/e20200928calculate/item_icon_ud09dc/9645c99d4e9b47ce6cf470e502510ed6.png",
